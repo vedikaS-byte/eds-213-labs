@@ -1,0 +1,21 @@
+---
+title: "explore_data"
+format: html
+---
+
+```{r}
+# Import packages 
+library(tidyverse)
+library(here)
+```
+
+```{r}
+# Import libraries
+ghg <- read.csv(here("data", "ers_plan_global", "DATA", "ers_plan_global_v5_5_0.csv"))
+```
+
+```{r}
+# Check out data structure
+glimpse(ghg)
+head(ghg)
+```
