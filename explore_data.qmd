@@ -21,4 +21,26 @@ glimpse(power_emissions)
 
 
 
+# Residential vs non-residential for power
+non_residential <- read.csv(here("data", "DATA", "buildings", 
+                             "non-residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv"))
+
+glimpse(non_residential)
+
+residential <- read.csv(here("data", "DATA", "buildings", 
+                             "residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv"))
+
+glimpse(residential)
+
 ```
+
+
+
+
+
+
+
+
+
+
+
