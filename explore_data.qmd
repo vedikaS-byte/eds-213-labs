@@ -10,12 +10,18 @@ library(here)
 ```
 
 ```{r}
-# Import libraries
+# Import data
 ghg <- read.csv(here("data", "ers_plan_global", "DATA", "ers_plan_global_v5_5_0.csv"))
-```
 
-```{r}
-# Check out data structure
 glimpse(ghg)
-head(ghg)
+
+library(httr)
+
+url <- "https://api.climatetrace.org/v7/sources/:id"
+
+response <- VERB("GET", url, content_type("application/octet-stream"), accept("application/json"))
+
+content(response, "text")
+ghg_ranking_sources <- fromJSON(rawToChar(response$content))
+glimpse(ghg_ranking_sources)
 ```
