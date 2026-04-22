@@ -15,20 +15,19 @@ ghg <- read.csv(here("data", "ers_plan_global", "DATA", "ers_plan_global_v5_5_0.
 
 glimpse(ghg)
 
-power_emissions <- read.csv(here("data", "DATA", "power", "electricity-generation_emissions_sources_v5_5_0.csv"))
+# ~/MEDS/eds-213/eds-213-labs/data/DATA/power
+power_emissions <- read.csv("~/MEDS/eds-213/eds-213-labs/data/DATA/power/electricity-generation_emissions_sources_v5_5_0.csv")
 
 glimpse(power_emissions)
 
 
 
 # Residential vs non-residential for power
-non_residential <- read.csv(here("data", "DATA", "buildings", 
-                             "non-residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv"))
+non_residential <- read.csv("~/MEDS/eds-213/eds-213-labs/data/DATA/buildings/non-residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv")
 
 glimpse(non_residential)
 
-residential <- read.csv(here("data", "DATA", "buildings", 
-                             "residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv"))
+residential <- read.csv("~/MEDS/eds-213/eds-213-labs/data/DATA/buildings/residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv")
 
 glimpse(residential)
 
