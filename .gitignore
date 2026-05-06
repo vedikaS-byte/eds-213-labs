@@ -1,5 +1,6 @@
 # Ignore data
 /data
+/database
 
 # History files
 .Rhistory
