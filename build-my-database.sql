@@ -48,6 +48,5 @@ SELECT s.source_name, s.iso3_country, SUM(e.emissions_quantity), s.capacity,
     JOIN emission_records e ON s.source_id = e.source_id
     WHERE e.sector LIKE 'buildings'
     GROUP BY s.source_name, s.iso3_country, s.capacity
-    ORDER BY co2_per_m2 DESC 
-    LIMIT ;
+    ORDER BY co2_per_m2 DESC;
 
