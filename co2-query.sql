@@ -7,8 +7,8 @@ SELECT
     ) AS co2_per_m2_per_year 
 FROM sources s
 JOIN emission_records e ON s.source_id = e.source_id 
-WHERE e.sector = 'buildings' 
-  AND s.capacity_units = 'm^2'  
+WHERE e.sector = 'buildings' -- Filter for buildings sector
+  AND s.capacity_units = 'm^2'  -- Ensure capacity is in m^2 for intensity calculation
   AND s.capacity > 0 -- Exclude sources with zero capacity to avoid division by zero (avoid resulting NaN)                                 
 GROUP BY s.source_id, s.source_name, s.capacity
 ORDER BY co2_per_m2_per_year DESC                         
