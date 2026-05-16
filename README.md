@@ -23,7 +23,7 @@ This repository houses a DuckDB database and analysis of CO₂ emissions intensi
 ```
 
 ## Data Access
-The data used in the creation of this relational database is not housed in this repository. ([Climate TRACE](https://climatetrace.org/data)) provides publicly accessible emissions data across sectors, countries, cities, and subnational inventories worldwide. Consult the [Climate TRACE methodology](https://github.com/climatetracecoalition/methodology-documents) for additional information regarding spatial methodology for building emissions estimation.
+The data used in the creation of this relational database is not housed in this repository. [Climate TRACE](https://climatetrace.org/data) provides publicly accessible emissions data across sectors, countries, cities, and subnational inventories worldwide. Consult the [Climate TRACE methodology](https://github.com/climatetracecoalition/methodology-documents) for additional information regarding spatial methodology for building emissions estimation.
 
 | Sector | Description | Source |
 |---|---|---|
