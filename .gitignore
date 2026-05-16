@@ -1,3 +1,5 @@
+# Stop tracking DS_Store files
+.DS_Store
 # Ignore data
 /data
 
