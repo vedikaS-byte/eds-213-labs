@@ -25,10 +25,10 @@ This repository houses a DuckDB database and analysis of CO₂ emissions intensi
 ## Data Access
 The data used in the creation of this relational database is not housed in this repository. [Climate TRACE](https://climatetrace.org/data) provides publicly accessible emissions data across sectors, countries, cities, and subnational inventories worldwide. Consult the [Climate TRACE methodology](https://github.com/climatetracecoalition/methodology-documents) for additional information regarding spatial methodology for building emissions estimation.
 
-| Sector | Description | Source |
+| Sector | Description |
 |---|---|---|
-| Power | Electricity generation emissions (CO₂) | [Power](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
-| Non-Residential Buildings | On-site fuel usage emissions, excluding electricity (CO₂) | [Non-Residential Buildings](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
+| Power](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) | Electricity generation emissions (CO₂) | 
+| [Non-Residential Buildings](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip)| On-site fuel usage emissions, excluding electricity (CO₂) | 
 
 
 ## Reproducibility 
