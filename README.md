@@ -1,11 +1,11 @@
 # CO₂ Emissions Database: U.S. Power and Non-Residential Building Emissions by County-Level Records
-- A brief explanation of the repository’s purpose. Paragraphs or a bulleted list are both acceptable options. You may include an image or logo that represents the project.
 
 ## Description
-- A concise description of what’s housed in the repository. This includes information about the repository structure or file organization.
 
-## Repository Structure and Contents
+This repository houses a DuckDB database and analysis of CO₂ emissions intensity from non-residential buildings and power sources across US counties based on two datasets obtained from Climate TRACE. A relational database containing emission records across several county-level jurisdictions was created to relate source metadata (location and capacity) with monthly CO₂ emissions quantities. This relational database was used to calculate and visualize CO₂ intensity (tons CO₂/m²/year) to identify the highest-emitting jurisdictions in the U.S.
 
+
+## Repository Structure 
 ```
 ├── co2-query.sql
 ├── data-cleaning.ipynb
@@ -23,7 +23,16 @@
 ```
 
 ## Data Access
-- Details regarding data access. Any necessary information on where data lives (e.g. is it housed in the repo, on a server, in a library / package etc.) and how to access it in order to run the code.
+The data used in the creation of this relational database is not housed in this repository. ([Climate TRACE](https://climatetrace.org/data)) provides publicly accessible emissions data across sectors, countries, cities, and subnational inventories worldwide. Consult the [Climate TRACE methodology](https://github.com/climatetracecoalition/methodology-documents) for additional information regarding spatial methodology for building emissions estimation.
+
+| Sector | Description | Source |
+|---|---|---|
+| Power (CO₂) | Electricity generation emissions (CO₂) | [Power](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
+| Non-Residential Buildings (CO₂) | On-site fuel usage emissions, excluding electricity (CO₂) | [Non-Residential Buildings ()](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
+
+
+## Reproducibility 
+
 
 ## Contributors
 - References or acknowledgements. In an appropriate, consistent format, including links. Provide a reference to the course and any other sources that supported the development of the repository. Add references for data sets too.

@@ -1,4 +1,3 @@
-
 -- Create sources table
 CREATE TABLE sources (
     source_id       VARCHAR PRIMARY KEY,
@@ -28,7 +27,7 @@ CREATE TABLE emission_records (
     emissions_factor       DOUBLE,
     emissions_factor_units VARCHAR,
     sector                 VARCHAR,
-    PRIMARY KEY (source_id, start_time, gas),
+    PRIMARY KEY (source_id, start_time, gas), -- Composite primary key to allow multiple records per source_id for different gases and time periods
     FOREIGN KEY (source_id) REFERENCES sources(source_id)
 );
 
