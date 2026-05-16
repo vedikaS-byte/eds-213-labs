@@ -37,11 +37,16 @@ Steps to reproduce the analysis are included below:
 2. Install dependencies using `environment.yml`.
 3. Download raw data from Climate TRACE (links in `Data` section).
 4. Run `data-cleaning.ipynb` to clean the data and export `sources.csv` and `emission_records.csv` to `data/new_tables/`.
-5. Run `build-my-database.sql` to create the database and load the cleaned tables.
+5. Run `database/build-my-database.sql` to create the database and load the cleaned tables.
 6. Run `data-visualization.ipynb` to reproduce the analysis and visualizations.
 
 ## Contributors
+This repository is maintained by Vedika Shirtekar as part of the Master of Environmental Data Science program at UC Santa Barbara. This work was completed for the [EDS 213: Databases and Data Management](https://ucsb-library-research-data-services.github.io/bren-eds213/) course at the Bren School of Environmental Science and Management, which provided data access and documentation practices, as well as assignment instructions.
+
 - References or acknowledgements. In an appropriate, consistent format, including links. Provide a reference to the course and any other sources that supported the development of the repository. Add references for data sets too.
 
 ## References
-- References or acknowledgements. In an appropriate, consistent format, including links. Provide a reference to the course and any other sources that supported the development of the repository. Add references for data sets too.
+[1] Climate TRACE. (2025). *U.S. CO₂ Emissions by Source* [Dataset]. Climate TRACE. Accessed May 14, 2025, from 
+https://climatetrace.org/data 
+
+[2] EDS 213. (n.d.). Databases and Data Management. Bren School of Environmental Science and Management. Accessed May 12, 2025, from https://ucsb-library-research-data-services.github.io/bren-eds213/
