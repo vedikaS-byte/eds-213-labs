@@ -8,19 +8,24 @@ This repository houses a DuckDB database and analysis of CO₂ emissions intensi
 
 ## Repository Structure 
 ```
-├── data-cleaning.ipynb
-├── data-visualization.ipynb
+├── data-cleaning.ipynb        # Data cleaning and table preparation
+├── data-visualization.ipynb   # CO₂ intensity visualization
 ├── database
-│   └── my-db.duckdb
-│   └── co2-query.sql
-│   └── database-creation.sql
-├── eds-213-labs.Rproj
-├── environment.yml
-├── figs
+│   └── my-db.duckdb           # Relational database
+│   └── co2-query.sql          # SQL query for CO₂ intensity analysis
+│   └── database-creation.sql  # SQL schema and data loading
+├── eds-213-labs.Rproj         # R project file
+├── environment.yml            # Conda environment dependencies
+├── figs                       # Output figures
 ├── LICENSE
 ├── README.md
-└── requirements.txt
+└── requirements.txt           # Python dependencies
 ```
+## Database Schema
+
+![Database Schema](figs/database-schema.png)
+
+**Note:** `emission_records` uses a composite primary key of `source_id-start_time-gas` to uniquely identify each emission record.
 
 ## Data Access
 The data used in the creation of this relational database is not housed in this repository. [Climate TRACE](https://climatetrace.org/data) provides publicly accessible emissions data across sectors, countries, cities, and subnational inventories worldwide. Consult the [Climate TRACE methodology](https://github.com/climatetracecoalition/methodology-documents) for additional information regarding spatial methodology for building emissions estimation.
@@ -35,7 +40,9 @@ The data used in the creation of this relational database is not housed in this 
 Steps to reproduce the analysis are included below: 
 1. Clone repository.
 2. Install dependencies using `environment.yml`.
-3. Download raw data from Climate TRACE (links in `Data Access` section).
+3. Download the U.S. CO₂ emissions data from Climate TRACE and store the files in `/data`:
+   - `non-residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv`
+   - `electricity-generation_emissions_sources_v5_5_0.csv`
 4. Run `data-cleaning.ipynb` to clean the data and export `sources.csv` and `emission_records.csv` to `data/new_tables/`.
 5. Run `database/build-my-database.sql` to create the database and load the cleaned tables.
 6. Run `data-visualization.ipynb` to reproduce the analysis and visualizations.

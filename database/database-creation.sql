@@ -32,7 +32,3 @@ CREATE TABLE emission_records (
 );
 
 COPY emission_records FROM '/Users/vedikashirtekar/MEDS/EDS-213/eds-213-labs/data/new_tables/emission_records.csv';
-
---- Check out the tables 
-SELECT * FROM sources LIMIT 5;
-SELECT * FROM emission_records LIMIT 5;
