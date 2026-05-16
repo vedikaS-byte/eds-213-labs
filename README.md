@@ -1,5 +1,4 @@
-# eds-213-labs
-- A short, but descriptive title.
+# CO₂ Emissions Database: U.S. Power and Non-Residential Building Emissions by County-Level Records
 - Markdown headers are used to separate each README section.
 - A brief explanation of the repository’s purpose. Paragraphs or a bulleted list are both acceptable options. You may include an image or logo that represents the project.
 - A concise description of what’s housed in the repository. This includes information about the repository structure or file organization.
@@ -14,6 +13,22 @@
 Repository containing database project for EDS 213.
 
 ## Repository Structure and Contents
+
+```
+├── co2-query.sql
+├── data-cleaning.ipynb
+├── data-visualization.ipynb
+├── database
+│   └── my-db.duckdb
+├── database-creation.sql
+├── eds-213-labs.Rproj
+├── environment.yml
+├── figs
+│   └── co2_per_m2.png
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
 
 ## Data Access
 
