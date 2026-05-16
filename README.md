@@ -33,9 +33,9 @@ The data used in the creation of this relational database is not housed in this 
 
 ## Reproducibility 
 Steps to reproduce the analysis are included below: 
-1. Clone or fork repository.
+1. Clone repository.
 2. Install dependencies using `environment.yml`.
-3. Download raw data from Climate TRACE (links in `Data` section).
+3. Download raw data from Climate TRACE (links in `Data Access` section).
 4. Run `data-cleaning.ipynb` to clean the data and export `sources.csv` and `emission_records.csv` to `data/new_tables/`.
 5. Run `database/build-my-database.sql` to create the database and load the cleaned tables.
 6. Run `data-visualization.ipynb` to reproduce the analysis and visualizations.
