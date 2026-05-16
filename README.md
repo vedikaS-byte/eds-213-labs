@@ -16,7 +16,7 @@ This repository houses a DuckDB database and analysis of CO₂ emissions intensi
 │   └── my-db.duckdb           # Relational database
 │   └── co2-query.sql          # SQL query for CO₂ intensity analysis
 │   └── database-creation.sql  # SQL schema and data loading
-├── eds-213-labs.Rproj         # R project file
+├── eds-213-labs.Rproj         
 ├── environment.yml            # Conda environment dependencies
 ├── figs                       # Output figures
 ├── LICENSE
