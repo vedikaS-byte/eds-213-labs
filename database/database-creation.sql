@@ -1,3 +1,10 @@
+-- Note: Data files are not included in this repository.
+-- To reproduce this database:
+-- 1. Download raw data from https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip
+-- 2. Place CSVs in data/raw/
+-- 3. Run data-cleaning.ipynb to generate cleaned CSVs in data/new_tables/
+-- 4. Run this script to create the database
+
 -- Create sources table
 CREATE TABLE sources (
     source_id       VARCHAR PRIMARY KEY,
