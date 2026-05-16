@@ -5,19 +5,17 @@
 
 This repository houses a DuckDB database and analysis of CO₂ emissions intensity from non-residential buildings and power sources across US counties based on two datasets obtained from Climate TRACE. A relational database containing emission records across several county-level jurisdictions was created to relate source metadata (location and capacity) with monthly CO₂ emissions quantities. This relational database was used to calculate and visualize CO₂ intensity (tons CO₂/m²/year) to identify the highest-emitting jurisdictions in the U.S.
 
-
 ## Repository Structure 
 ```
-├── co2-query.sql
 ├── data-cleaning.ipynb
 ├── data-visualization.ipynb
 ├── database
 │   └── my-db.duckdb
-├── database-creation.sql
+│   └── co2-query.sql
+│   └── database-creation.sql
 ├── eds-213-labs.Rproj
 ├── environment.yml
 ├── figs
-│   └── co2_per_m2.png
 ├── LICENSE
 ├── README.md
 └── requirements.txt
