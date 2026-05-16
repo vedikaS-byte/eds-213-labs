@@ -10,6 +10,8 @@ This repository houses a DuckDB database and analysis of CO₂ emissions intensi
 ```
 ├── data-cleaning.ipynb        # Data cleaning and table preparation
 ├── data-visualization.ipynb   # CO₂ intensity visualization
+├── data
+│   └── new_tables             # Loaded sources.csv and emissions_records.csv
 ├── database
 │   └── my-db.duckdb           # Relational database
 │   └── co2-query.sql          # SQL query for CO₂ intensity analysis
@@ -40,7 +42,7 @@ The data used in the creation of this relational database is not housed in this 
 Steps to reproduce the analysis are included below: 
 1. Clone repository.
 2. Install dependencies using `environment.yml`.
-3. Download the U.S. CO₂ emissions data from Climate TRACE and store the files in `/data`:
+3. Download the U.S. CO₂ emissions data from Climate TRACE and store the files in `data/`:
    - `non-residential-onsite-fuel-usage_emissions_sources_v5_5_0.csv`
    - `electricity-generation_emissions_sources_v5_5_0.csv`
 4. Run `data-cleaning.ipynb` to clean the data and export `sources.csv` and `emission_records.csv` to `data/new_tables/`.
