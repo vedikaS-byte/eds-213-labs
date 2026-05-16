@@ -44,7 +44,7 @@ Steps to reproduce the analysis are included below:
 This repository is maintained by Vedika Shirtekar as part of the Master of Environmental Data Science program at UC Santa Barbara. This work was completed for the [EDS 213: Databases and Data Management](https://ucsb-library-research-data-services.github.io/bren-eds213/) course at the Bren School of Environmental Science and Management, which provided data access and documentation practices, as well as assignment instructions.
 
 ## References
-[1] Climate TRACE. (2025). *U.S. CO₂ Emissions by Source* [Dataset]. Climate TRACE. Accessed May 14, 2025, from 
+[1] Climate TRACE. (2025). *U.S. CO₂ Emissions by Source* [Dataset]. Climate TRACE. Accessed May 14, 2026, from 
 https://climatetrace.org/data 
 
-[2] EDS 213. (n.d.). Databases and Data Management. Bren School of Environmental Science and Management. Accessed May 12, 2025, from https://ucsb-library-research-data-services.github.io/bren-eds213/
+[2] EDS 213. (n.d.). Databases and Data Management. Bren School of Environmental Science and Management. Accessed May 12, 2026, from https://ucsb-library-research-data-services.github.io/bren-eds213/
