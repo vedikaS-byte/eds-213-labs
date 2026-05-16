@@ -1,5 +1,6 @@
 # CO₂ Emissions Database: U.S. Power and Non-Residential Building Emissions by County-Level Records
 
+![Green Building Icon Header](figures/low-emission-materials-green-building-color-icon.avif)
 
 ## Description
 
