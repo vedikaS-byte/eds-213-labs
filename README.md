@@ -27,12 +27,18 @@ The data used in the creation of this relational database is not housed in this 
 
 | Sector | Description | Source |
 |---|---|---|
-| Power (CO₂) | Electricity generation emissions (CO₂) | [Power](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
-| Non-Residential Buildings (CO₂) | On-site fuel usage emissions, excluding electricity (CO₂) | [Non-Residential Buildings ()](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
+| Power | Electricity generation emissions (CO₂) | [Power](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
+| Non-Residential Buildings | On-site fuel usage emissions, excluding electricity (CO₂) | [Non-Residential Buildings](https://downloads.climatetrace.org/latest/country_packages/co2/USA.zip) |
 
 
 ## Reproducibility 
-
+Steps to reproduce the analysis are included below: 
+1. Clone or fork repository.
+2. Install dependencies using `environment.yml`.
+3. Download raw data from Climate TRACE (links in `Data` section).
+4. Run `data-cleaning.ipynb` to clean the data and export `sources.csv` and `emission_records.csv` to `data/new_tables/`.
+5. Run `build-my-database.sql` to create the database and load the cleaned tables.
+6. Run `data-visualization.ipynb` to reproduce the analysis and visualizations.
 
 ## Contributors
 - References or acknowledgements. In an appropriate, consistent format, including links. Provide a reference to the course and any other sources that supported the development of the repository. Add references for data sets too.
